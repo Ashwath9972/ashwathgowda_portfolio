@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashwath Gowda Y S | Portfolio</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="logo">
+        
+        Ashwath Gowda Y S<span>.</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="resume.pdf" download="Ashwath_Gowda_Resume.pdf" class="resume-btn">
+                <i class="fa-solid fa-download"></i> Resume
+            </a>
+        </li>
+    </ul>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-text">
+        <h1>Ashwath Gowda Y S</h1>
+        <h3><span id="typing"></span></h3>
+        <p>Transforming complex problems into elegant, data-driven solutions.</p>
+
+        <a href="resume.pdf" download="Ashwath_Gowda_Resume.pdf" class="hero-btn">
+            Download Resume
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="profile.jpg" alt="Profile">
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Objective</h2>
+    <p>
+        Aspiring IT professional skilled in Python, SQL and analytics tools.
+        Passionate about building innovative and efficient solutions.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>B.E. Computer Science & Engineering</h3>
+        <p>MIT Mysore (2023–2026) | CGPA: 7.51</p>
+    </div>
+    <div class="card">
+        <h3>Diploma in CSE</h3>
+        <p>B.E.T Polytechnic (2021–2023) | CGPA: 9.26</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-container">
+        <div class="skills-box">
+            <h3>Programming</h3>
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Java</span>
+            </div>
+        </div>
+
+        <div class="skills-box">
+            <h3>Web Development</h3>
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <div class="skills-box">
+            <h3>Data Tools</h3>
+            <div class="skill-tags">
+                <span>Pandas</span>
+                <span>Power BI</span>
+                <span>Tableau</span>
+            </div>
+        </div>
+
+        <div class="skills-box">
+            <h3>Tools</h3>
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Ubuntu</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <span class="status completed">Completed</span>
+            <h3>Healthcare Chatbot using NLP</h3>
+            <p>
+                Developed a chatbot using Python, NLP and Flask to respond to 
+                medical queries with an interactive web interface.
+            </p>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Flask</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="status completed">Completed</span>
+            <h3>IoT-Based Collision Detection System</h3>
+            <p>
+                Built an IoT-based accident detection system using ESP32,
+                GPS and GSM modules with real-time SOS alerts.
+            </p>
+            <div class="project-tags">
+                <span>IoT</span>
+                <span>ESP32</span>
+                <span>GPS</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+    <h2>Contact</h2>
+
+    <div class="contact-info">
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            ashwathgowdaashu2004@gmail.com
+        </p>
+
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +91-9972363182
+        </p>
+    </div>
+</section>
+
+<button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+<footer>
+    <p>© 2026 Ashwath Gowda Y S</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

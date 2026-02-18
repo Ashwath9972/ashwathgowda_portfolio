@@ -1,0 +1,293 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+  scroll-behavior:smooth;
+}
+
+/* ================= KEYFRAMES FOR FLOATING PROFILE ================= */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* FULL PAGE BACKGROUND */
+body{
+  background:#cfc4da;
+  color:#333;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#cfc4da;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* LOGO / NAME WITH PURPLE-PINK GRADIENT */
+.logo{
+  font-weight:bold;
+  font-size:28px;
+  background: linear-gradient(90deg, #7c5cff, #ff6ec7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: default;
+}
+
+.logo:hover{
+  filter: drop-shadow(0 0 6px rgba(255,110,199,0.6));
+  transition:0.3s;
+}
+
+/* NAV LINKS */
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#4b3c5d;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#7c5cff;
+}
+
+/* RESUME BUTTON */
+.resume-btn{
+  border:2px solid #7c5cff;
+  padding:6px 14px;
+  border-radius:6px;
+  color:#7c5cff;
+  transition:0.3s;
+}
+
+.resume-btn:hover{
+  background:#7c5cff;
+  color:white;
+}
+
+/* HERO SECTION */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 60px;
+  background:#cfc4da;
+}
+
+.hero h1{
+  font-size:60px;
+  color:#7c5cff;
+  margin:15px 0;
+}
+
+.hero h3{
+  color:#5a4c6d;
+  font-weight:500;
+}
+
+.hero p{
+  margin-top:15px;
+  color:#555;
+  max-width:500px;
+}
+
+/* BUTTONS */
+.hero-btn{
+  display:inline-block;
+  margin-top:25px;
+  margin-right:15px;
+  padding:12px 22px;
+  background:#7c5cff;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  opacity:0.9;
+}
+
+.secondary-btn{
+  display:inline-block;
+  padding:12px 22px;
+  border:2px solid #7c5cff;
+  color:#7c5cff;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.secondary-btn:hover{
+  background:#7c5cff;
+  color:white;
+}
+
+/* PROFILE IMAGE WITH FLOATING EFFECT */
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #7c5cff;
+  animation: float 4s ease-in-out infinite; /* Floating animation */
+}
+
+/* GENERAL SECTION */
+section{
+  padding:80px 60px;
+  background:#cfc4da;
+}
+
+/* SECTION HEADINGS (Skills & Projects BLACK) */
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+  color:#000;
+  font-size:32px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom:20px;
+}
+
+/* ================= SKILLS ================= */
+.skills-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.skills-box{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  transition:0.3s;
+  color:#000;
+}
+
+.skills-box h3{
+  color:#000;
+}
+
+.skills-box:hover{
+  transform:translateY(-6px);
+}
+
+.skill-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:15px;
+}
+
+.skill-tags span{
+  background:#e6d9ff;
+  padding:6px 12px;
+  border-radius:20px;
+  color:#000;
+}
+
+/* ================= PROJECTS ================= */
+.projects-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.project-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  position:relative;
+  transition:0.3s;
+  color:#000;
+}
+
+.project-card h3,
+.project-card p{
+  color:#000;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+}
+
+.status{
+  position:absolute;
+  top:15px;
+  right:15px;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  background:#e6d9ff;
+  color:#000;
+  font-weight:600;
+}
+
+/* ================= EDUCATION ================= */
+.education-section{
+  text-align:center;
+}
+
+/* ================= OBJECTIVE ================= */
+.objective-section{
+  text-align:center;
+}
+
+/* ================= CONTACT ================= */
+.contact-section{
+  text-align:center;
+  background:#cfc4da;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+  font-size:18px;
+}
+
+.contact-info i{
+  color:#7c5cff;
+  margin-right:8px;
+}
+
+/* BACK TO TOP BUTTON */
+#topBtn{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  padding:12px;
+  background:#7c5cff;
+  color:white;
+  border:none;
+  border-radius:50%;
+  display:none;
+  cursor:pointer;
+}
